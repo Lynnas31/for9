@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><p id="hienthi"></p>
+<script>
+    let a = parseFloat(prompt("so tien ban dau"));
+    let b = parseFloat(prompt("so thang cho vay"));
+    let c = parseFloat(prompt("lai suat hang thang"));
+    let sum = 0;
+    let total=0;
+    for (i=1;i<=b;i++){
+        total = (a*c)/100  ;
+        sum = sum + total
+        a = a + total;
+      console.log(sum);
+      console.log(total);
+    } document.write(total +"<br>")
+    document.getElementById('hienthi').innerHTML += "so tien lai la :  " + sum;
+</script>
+</body>
+</html>

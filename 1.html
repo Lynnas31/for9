@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body> <p id="hienthi"></p>
+<script>
+    let count = parseInt(prompt("nhap so luong day fibionancy"))
+    let a = 0;
+    let b = 1;
+    let c;
+    for (i=0;i<count;i++){
+        c = a + b;
+        a = b;
+        b = c;
+        document.getElementById('hienthi').innerHTML +=a +'<br>';
+    }
+</script>
+
+</body></html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = prompt("nhap chieu cao tam giac");
+    for (i=1;i<=n;i++){
+        for (j=1;j<=i;j++){
+        document.write("*");}
+        document.write("<br>")
+    } document.write("<br>");
+
+    for (i=1;i<=n;i++){
+    for (j=n;j>=i;j--){
+        document.write("*");
+    } document.write("<br>")}
+    document.write("<br>");
+    for (i=1;i<=n;i++){
+        for (j=n-1;j>=i;j--){
+            document.write("&#160&#160");
+        }
+        for (k=1;k<=i;k++){
+            document.write("*");
+        } document.write("<br>")
+    } document.write("<br>");
+    for (i=1;i<=n;i++){
+        for (j=1;j<i;j++){
+            document.write("&#160&#160");
+        } for (k=n;k>=i;k--){
+            document.write("*");
+        } document.write("<br>")
+    }
+</script>
+
+</body>
+</html>
